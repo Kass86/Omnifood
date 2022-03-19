@@ -39,7 +39,10 @@ const observer = new IntersectionObserver(
   function (entries) {
     const ent = entries[0];
 
-    if (ent.isIntersecting === false) document.body.classList.add("sticky");
+    if (ent.isIntersecting === false) {
+      document.body.classList.add("sticky");
+      nav.classList.remove("nav-open");
+    }
 
     if (ent.isIntersecting !== false) document.body.classList.remove("sticky");
   },

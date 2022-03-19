@@ -1019,10 +1019,12 @@ Footer */
   html {
     font-size: 50%;
   }
+
   .grid--3-cols,
   .grid--4-cols {
     grid-template-columns: 1fr 1fr;
   }
+
   .meal-title {
     font-size: 2.2rem;
   }
@@ -1123,5 +1125,14 @@ Footer */
   }
   .logos img {
     height: 1.8rem;
+  }
+
+  .cta {
+    grid-template-columns: none;
+    grid-template-rows: 3fr 4fr;
+  }
+
+  .cta-img-box {
+    grid-row: 1;
   }
 } ;
